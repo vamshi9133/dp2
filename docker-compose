@@ -1,0 +1,29 @@
+version: '3'
+services:
+  devops:
+    image: vamshi9133/trainrepopaytm:latest
+    ports:
+      - "20:80"
+    deploy:
+      replicas: 3
+
+  aws:
+    image: vamshi9133/rechargerepopaytm:latest
+    ports:
+      - "21:80"
+    deploy:
+      replicas: 3
+
+  datascience:
+    image: vamshi9133/dthrepopaytm:latest
+    ports:
+      - "92:80"
+    deploy:
+      replicas: 3
+
+  azure:
+    image: rahamshaik/azurereponit:latest
+    ports:
+      - "93:80"
+    deploy:
+      replicas: 3
