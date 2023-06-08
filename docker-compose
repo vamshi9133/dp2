@@ -21,9 +21,8 @@ services:
     deploy:
       replicas: 3
 
-  azure:
-    image: rahamshaik/azurereponit:latest
-    ports:
-      - "93:80"
-    deploy:
-      replicas: 3
+  
+    
+    
+      
+        
